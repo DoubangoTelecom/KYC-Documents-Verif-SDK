@@ -45,7 +45,7 @@ This is not a wish list, we already have all listed features already working on 
  - Document liveness detection (will be based on https://github.com/DoubangoTelecom/FaceLivenessDetection-SDK)
  - Credit card OCR (improved version of https://github.com/DoubangoTelecom/ultimateCreditCard-SDK)
  - Bank check information extraction/OCR from Magnetic Ink Character Recognition [MICR] (E-13B & CMC-7) (improved version of https://github.com/DoubangoTelecom/ultimateMICR-SDK)
- - Age estimation
+ - Age estimation from the portrait
 
 <a name="technical-questions"></a>
 # Technical questions #
