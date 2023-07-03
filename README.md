@@ -4,8 +4,8 @@
   - [Getting help](#technical-questions)
 
 
-- Online web demo at https://www.doubango.org/webapps/face-liveness/
-- Full documentation for the SDK at https://www.doubango.org/SDKs/face-liveness/docs/
+- Online web demo at https://www.doubango.org/webapps/kyc-documents-verif
+- Full documentation for the SDK at https://www.doubango.org/SDKs/kyc-documents-verif/docs
 - Supported languages (API): **C++**, **C#**, **Java** and **Python**
 - Open source Computer Vision Library: https://github.com/DoubangoTelecom/compv
 <hr />
