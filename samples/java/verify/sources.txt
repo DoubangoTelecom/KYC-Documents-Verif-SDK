@@ -1,0 +1,8 @@
+Verify.java
+../../../java/org/doubango/KycVerif/Sdk/KYC_VERIF_SDK_IMAGE_TYPE.java
+../../../java/org/doubango/KycVerif/Sdk/KYCDocumentsVerifSDK.java
+../../../java/org/doubango/KycVerif/Sdk/KYCDocumentsVerifSDKConstants.java
+../../../java/org/doubango/KycVerif/Sdk/KYCDocumentsVerifSDKJNI.java
+../../../java/org/doubango/KycVerif/Sdk/KycVerifSdkEngine.java
+../../../java/org/doubango/KycVerif/Sdk/KycVerifSdkParallelDeliveryCallback.java
+../../../java/org/doubango/KycVerif/Sdk/KycVerifSdkResult.java
