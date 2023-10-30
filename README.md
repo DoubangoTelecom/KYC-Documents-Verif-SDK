@@ -51,14 +51,14 @@ This is not a wish list, we already have all listed features already working on 
  - Document liveness detection (will be based on https://github.com/DoubangoTelecom/FaceLivenessDetection-SDK)
  - Credit card OCR (improved version of https://github.com/DoubangoTelecom/ultimateCreditCard-SDK)
  - Bank check information extraction/OCR from Magnetic Ink Character Recognition [MICR] (E-13B & CMC-7) (improved version of https://github.com/DoubangoTelecom/ultimateMICR-SDK)
- - Age, gender and ethnicity prediction from the portrait and matching with OCR result from the document
+ - Age estimation from the portrait
 
 <a name="trying-samples"></a>
 ## Trying samples (**C++**, **C#**, **Java** and **Python**) ##
 Go to the [samples](samples) folder and choose your prefered language.
 The [binaries](binaries) folder contains pre-built bins of the samples which means you don't need to build the samples to try them. The Verify sample is a command line application accepting an image (jpeg, png, bmp...) as input and returning the result as JSON string. The JSON string is the same as what is returned by the online demo hosted at https://www.doubango.org/webapps/kyc-documents-verif.
  - Windows: pre-built binary at [binaries/windows/x86_64/verify.exe](binaries/windows/x86_64/verify.exe). You can also use the bat file at [binaries/windows/x86_64/verify.bat](binaries/windows/x86_64/verify.bat) to make your life easier.
- - Linux: pre-built binary at [binaries/linux/x86_64/verify](binaries/linux/x86_64/verify). You can also use the sh file at [binaries/windows/x86_64/verify.bat](binaries/linux/x86_64/verify.sh) to make your life easier.
+ - Linux: pre-built binary at [binaries/linux/x86_64/verify](binaries/linux/x86_64/verify). You can also use the sh file at [binaries/linux/x86_64/verify.sh](binaries/linux/x86_64/verify.sh) to make your life easier.
 
 Use the [benchmark](samples/cpp/benchmark) application to check how fast the SDK can run on your machine.
 
