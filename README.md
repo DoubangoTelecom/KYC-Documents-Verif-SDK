@@ -32,7 +32,7 @@ This version supports both Windows and Linux x86_64.
 
 <a name="checkout-source"></a>
 ## Checking out the source code ##
-The deep learning models, the binaries and the datasets are on a private reporsitory for obvious reasons. To get access to the private repository you'll need to:
+The deep learning models, the binaries and the datasets are on a private repository for obvious reasons. To get access to the private repository you'll need to:
   - 1/ Opt-out from all Doubango's private repositories. You cannot be beta tester on more than 1 repo at the same time.
   - 2/ [Send us a mail](https://www.doubango.org/#contact) with your company name and Github user name (to be added to the private repo). The mail must come from @YourCompanyName, mails from other domains (e.g. @Gmail) will be ignored. **The terms of use do not allow you to decompile or reverse engineer the models.**
 
