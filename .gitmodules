@@ -1,3 +1,5 @@
 [submodule "assets/KYC-Documents-Verif-SDK-Models"]
 	path = assets/KYC-Documents-Verif-SDK-Models
 	url = https://github.com/DoubangoTelecom/KYC-Documents-Verif-SDK-Models.git
+	branch = main
+	shallow = true
