@@ -141,9 +141,9 @@ namespace liveness
                 ocr_tunning_apply_whitelist = true,
                 ocr_tunning_apply_blacklist = true,
 
-                magsac_sigma = 4.0,
-                magsac_max_iters = 2000,
-                magsac_resampler = "uniform",
+                magsac_sigma = 2.0,
+                magsac_max_iters = 5000,
+                magsac_resampler = "prosac",
 
                 tps_enabled = true,
                 tps_speed = 1,

@@ -48,9 +48,9 @@ JSON_CONFIG = {
     "ocr_tunning_apply_whitelist": True,
     "ocr_tunning_apply_blacklist": True,
     
-    "magsac_sigma": 4.0,
-    "magsac_max_iters": 2000,
-    "magsac_resampler": "uniform",
+    "magsac_sigma": 2.0,
+    "magsac_max_iters": 5000,
+    "magsac_resampler": "prosac",
     
     "tps_enabled": True,
     "tps_speed": 1,

@@ -49,6 +49,10 @@ int main(int argc, char *argv[])
 		jsonConfig += (jsonConfig.empty() ? "" : ",")
 			+ std::string("\"license_host_type\": \"") + args["--type"] + std::string("\"");
 	}
+	if (args.find("--usbserial") != args.end()) {
+		jsonConfig += (jsonConfig.empty() ? "" : ",")
+			+ std::string("\"license_usbserial\": \"") + args["--usbserial"] + std::string("\"");
+	}
 	jsonConfig = "{" + jsonConfig + "}";
 
 	// Initialize the engine
