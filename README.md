@@ -35,6 +35,7 @@ This version supports both Windows and Linux x86_64.
 The deep learning models, the binaries and the datasets are on a private repository for obvious reasons. To get access to the private repository you'll need to:
   - 1/ Opt-out from all Doubango's private repositories. You cannot be beta tester on more than 1 repo at the same time.
   - 2/ [Send us a mail](https://www.doubango.org/#contact) with your company name and Github user name (to be added to the private repo). The mail must come from @YourCompanyName, mails from other domains (e.g. @Gmail) will be ignored. **The terms of use do not allow you to decompile or reverse engineer the models.**
+  - 3/ You must include the reason for your request: R&D test, educational, commercial...
 
 To checkout the source code: `git clone --recurse-submodules -j8 https://github.com/DoubangoTelecom/KYC-Documents-Verif-SDK`
 If you already have the code and want to update to the latest version: `git pull --recurse-submodules`
