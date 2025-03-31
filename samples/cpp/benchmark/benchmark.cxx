@@ -55,7 +55,7 @@ static const char* __jsonConfig =
 ""
 "\"magsac_sigma\": 1.0,"
 "\"magsac_max_iters\": 5000,"
-"\"magsac_resampler\": uniform\","
+"\"magsac_resampler\": \"uniform\","
 ""
 "\"tps_enabled\": true,"
 "\"tps_speed\": 1,"
@@ -190,10 +190,12 @@ int main(int argc, char *argv[])
 			static std::mutex parallelNotifMutex;
 			std::unique_lock<std::mutex > lk(parallelNotifMutex);
 			parallelNotifCondVar.wait_for(lk,
-				std::chrono::milliseconds(15 * 1000), // maximum number of millis to wait for before giving up, must never wait this long
+				std::chrono::milliseconds(3 * 60 * 1000), // maximum number of millis to wait for before giving up, must never wait this long
 				[&count] { return (parallelNotifCount == count); }
 			);
-			parallelNotifCount = 0;
+		}
+		else {
+			parallelNotifCount = count;
 		}
 	};
 
@@ -246,8 +248,8 @@ int main(int argc, char *argv[])
 	}
 
 	// Print estimated frame rate
-	const double estimatedFps = 1000.f / (elapsedTimeInMillis / (double)loopCount);
-	KYC_VERIF_SDK_PRINT_INFO("*** elapsedTimeInMillis: %lf, estimatedFps: %lf ***", elapsedTimeInMillis, estimatedFps);
+	const double estimatedFps = 1000.f / (elapsedTimeInMillis / static_cast<double>(parallelNotifCount));
+	KYC_VERIF_SDK_PRINT_INFO("*** elapsedTimeInMillis: %lf, notified: %zu, estimatedFps: %lf ***", elapsedTimeInMillis, parallelNotifCount, estimatedFps);
 
 	KYC_VERIF_SDK_PRINT_INFO("Press any key to terminate !!");
 	getchar();

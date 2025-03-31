@@ -33,19 +33,23 @@ To check if all dependencies are present:
 <a name="peformance-numbers"></a>
 # Peformance numbers #
 
-These performance numbers are obtained using **version 0.0.1**. You can use any later version.
+These performance numbers are obtained using **version 0.0.10**. You can use any later version.
 
 
 We ran the benchmark application for **#20 times loops** [United States - California Driving License (2017).jpg](../../../assets/images/United%20States%20-%20California%20Driving%20License%20%282017%29.jpg) file.
 
-**The first number (5727 millis, 3.49fps) means it takes 286 milliseconds to fully process the Californian driver license on RTX3060.** 286 = 1000/3.49.
+The first number **(1476 millis, 13.54fps)** means:
+  - it takes 1476 milliseconds to process #20 Californian driver licenses
+  - it takes 73.8 milliseconds to process #1 Californian driver license (73.8 = 1476/20)
+  - we can process 13.54 Californian driver licenses per second
 
 | | [Inter Parallel processing enabled](https://www.doubango.org/SDKs/kyc-documents-verif/docs/Parallel_processing.html#inter-processing) | [Inter Parallel processing disabled](https://www.doubango.org/SDKs/kyc-documents-verif/docs/Parallel_processing.html#inter-processing) |
 | --- | --- | --- |
-| AMD Ryzen 7 3700X 8-Core<br/>RTX 3060<br/>Ubuntu 20 | 5727 millis<br/>3.49 fps | 11332 millis<br/>1.76 fps |
-| Intel(R) Xeon(R) E3-1230 v6 @ 3.50GHz<br/>GTX 1070<br/>Ubuntu 18 | 8142 millis<br/>2.45 fps | 14480 millis<br/>1.38 fps |
-| Intel(R) i7-4790K @4.40GHz<br/>No GPU<br/>Windows 8 Pro | 24587 millis<br/>0.81 fps | 24776 millis<br/>0.80 fps |
-
+| AMD Ryzen 9 7950X<br/>RTX 4060<br/>Ubuntu 24 | 1476 millis<br/>13.54 fps | 2793 millis<br/>7.15 fps |
+| AMD Ryzen 7 3700X 8<br/>RTX 3060<br/>Ubuntu 20 | 2669 millis<br/>7.49 fps | 5097 millis<br/>3.92 fps |
+| Intel(R) Xeon(R) E3-1230 v6 @ 3.50GHz<br/>GTX 1070<br/>Ubuntu 18 | 4073 millis<br/>4.91 fps | 6779 millis<br/>2.95 fps |
+| AMD Ryzen 9 7950X<br/>No GPU<br/>Ubuntu  24| 3600 millis<br/>5.55 fps | 5358 millis<br/>3.73 fps |
+| Intel(R) i7-4790Kz<br/>No GPU<br/>Windows 8 Pro | 24587 millis<br/>0.81 fps | 24776 millis<br/>0.80 fps |
 
 Some important notes:
  - All tests are done with OpenVINO activation mode set to "auto". You'll have very poor performance numbers if you disable OpenVINO without having a GPU. Another reason th use OpenVINO instead of Tensorflow is that the former consumes far less memory.
